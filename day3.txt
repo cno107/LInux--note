@@ -1,0 +1,43 @@
+
+ln -s 目录a  链接名     在当前目录下创建一个通往目录a的软连接
+rm -rf 链接名   ------>delate link
+rm -rf 链接名/  ------>delate目标目录下的子文件
+
+
+history num  显示最后num行执行的命令 不加num则为全部
+history -c   ------->clear
+!num         执行第num行命令
+
+～～～～～～～～～～～～～～～～～～～～～文件目录类完结
+
+date -s +"%Y %m %d %H %M  %S"
+date -d "1 day ago"
+
+cal 
+cal 2020
+
+find 目录 -size +20M  大于20M
+find 目录 -name *.txt   查找带有txt后缀的
+find 目录 -regex  .* \( \. txt \| \. pdf \)$
+                  .*\(\.txt\|\.pdf\)$
+find 目录 -user 
+
+updatedb
+locate  文件名
+a  | b   --->连接符 将前面命令a的执行结果传递给后面的b去处理
+cat 文件名 | grep -ni 'txt' 查看文件并找出txt(不区分大小写)所在的行 并标出行号
+grep 文本搜索tool
+
+gzip  文件      (-r可以递归)
+gunzip  文件.gz
+gzip -d === gunzip
+
+zip -r 目标.zip  文件/目录        zip -r a.zip *
+unzip -d 目的地 目标.zip          zip -d ./home   a.zip
+
+tar   -zcvf  文件.tar.gz    文件1 2 3      
+z指的是gzip/gunzip  c --->create  v--->infomation.version  f--->file name
+                     x---->解压  C--->解压到
+tar   -zxvf  文件.tar.gz  -C  解压到 
+      -jxvf      tar.bz2
+     tar打包不压缩  tar.gz打包压缩

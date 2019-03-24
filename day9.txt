@@ -1,0 +1,16 @@
+监控网络/进程状态
+top -d   几秒screen一刷新(默认3秒一刷新)
+Top -i   几秒一刷新
+top -p   指定PID
+（P:cpu M:memory N:PID 排序 q:exit u:输入user） 大写！！！
+ k:kill指定PID 第二次按回车
+
+netstat -anp | grep sshd
+  a:all  n:numeric数字的 就是直接使用数字IPaddr而不是domain
+ p:programe runing PID&name 
+
+
+
+
+ 
+

@@ -1,0 +1,17 @@
+  > 重新定向      >> 追加
+　リダイレクト
+
+ ls -l > a.txt  当前所在的目录列表写进a.txt中去      （ cover）
+ ls -al >> b.txt 当前目录列表(包括隐藏的)全部写进b.txt中去  （追加）
+ cat or less or more a.txt > b.txt 将a覆盖到b中去
+echo "content..." >> c.txt 将content...追加到c的后面
+  
+
+ echo "content" 
+echo $PATH     显示当前环境path
+
+head -n 5 a.txt  显示前5行
+
+tail -n 5 b.txt 显示后5行
+tail -f  c.txt 实时追踪文档更新(vim不行 因为vim是从新新建了一个)
+

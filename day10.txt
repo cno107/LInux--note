@@ -1,0 +1,18 @@
+软件包 rpm & yum
+yum list | grep nodejs
+yum install  nodejs
+
+
+RPM :Redhat Package Manager
+ rpm -qa | grep chrome 查询query所有all
+ rpm -q name
+ rpm -qi     查包informaiton
+ rpm -ql     查包里文件及路径 list
+ rpm -qf     绝对路径查询file属于哪个包
+
+ rpm -e name 删除
+ rpm -e --nodeps name 强制删除
+
+ rpm -ivh   install verbose hash
+ 
+ 

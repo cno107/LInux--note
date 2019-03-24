@@ -1,0 +1,22 @@
+组管理 权限管理
+Ls -ahl 查看所有信息
+id user 查看user信息
+
+chown user file 改变文件所有者 但不改变所在组
+chgrp group file
+          -R   ----->recursive     
+
+权限けんげんpermission
+cat /etc/passwd   用户:密码:用户id:组id
+第一种
+chmod  u=  ,g=   ,o=   file             user group other all
+chmod   a=rwx  file                      read write execute
+chmod  a+x    file                   +增加权限 -减去
+ -rw-rw-rw- 1 tom bandit 0 Mar  3 22:39 abc
+0123456789       123user 456group 789other  -没有权限
+-rwxrwxrwx 1 tom bandit 0 Mar  3 22:39 abc
+第二种 r=4 w=2 x=1
+chmod   751 file         （u=rwx g=rx o=x)
+chmod   000 file
+
+

@@ -1,0 +1,31 @@
+mkdir (create a directory)
+mkdir -p (create 多级directory eg:/123/456)
+
+rmdir (delate an unempty file))
+rm -rf  (强制delate a file and its' children)
+   -i -f 
+
+touch  (create a empty file)
+touch 1.txt 2.txt 3.txt
+
+cp  source dest  (single file)
+cp -r sorce dest (directory and its' chiledren files)
+cp -a  === -dpR
+
+
+mv ( current directory)   rename
+mv (different directory) move/cut
+ eg: mv 1.txt 2.txt (rename)   mv 1.txt ../2.txt  (move/cut) 
+
+
+
+cat -n ... | more  (-n is add index, | more 分页 空格下翻)
+cat a.txt b.txt (display together in one screen)
+cat a.txt b.txt > c.txt (a and b put into c)
+more  ...     基于vim b--->before ;   q--->quiet  ; 
+      = ---->current row index ;            :f -->name and current row index
+    space--->next page;  enter-->next row
+less -N ... 
+
+
+

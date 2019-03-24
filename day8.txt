@@ -1,0 +1,39 @@
+进程
+ps -aux | grep 
+ps -ef  | grep
+ps -pu          pid/user 
+
+kill PID
+kill -9 PID       杀终端找bin/bash
+killall name
+
+サービス
+service name start/stop/restart/reload/status
+
+Centos7以後　systemctl
+systemctl start/stop/restart/status/disable/enable name.service
+Eg:firewalld.service iptables.service
+
+Mac/win telnet ip port 测试端口是否打开
+
+查看服务
+setup   tab切换 空格选定
+ls -l /etc/init.d/
+systemctl list-units --type=service   查看所有已启动的服务
+
+运行级别　vi /etc/inittab
+0 – 停止
+1 – シングルユーザー
+2 – 未使用/ユーザー定義可能
+3 – マルチユーザー、コンソールログインのみ
+4 – 未使用/ユーザー定義可能
+5 – ランレベル 3 + Xディスプレイマネージャ起動
+6 – リブート
+
+chkconfig --list | grep name 
+chkconfig --level 0 network on
+ 
+
+
+ 
+

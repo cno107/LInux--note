@@ -1,0 +1,19 @@
+Disk partition 
+
+lsblk -f 
+mount /dev/sdb1  挂到哪
+umount /dev/sdb1 
+
+建一个新磁盘
+ 1）Add a harddisk
+ 2）Partition           fdisk /dev/sdb
+ 3）Formate             mkfs.ext4  /dev/sdb4
+   （u盘注意格式化vfat 而且需要umount）
+ 4) Mount   先mkdir一个  mount /dev/sdb4 挂哪
+ 5）Auto mount 
+    vim /etc/fstab
+   /dev/sdb4      挂哪     ext4  defaults   0 0
+
+    mount -a     (auto)
+
+

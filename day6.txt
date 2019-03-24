@@ -1,0 +1,18 @@
+磁盘情况
+df -lh
+
+每个文件/目录的磁盘使用情况
+du -ach --max-depth=1 /etc 
+       --max-depth查询深度
+
+1.统计file个数
+ls -l | grey '^-' | wc -l
+2.统计directory个数
+ls -l | grey '^d' | wc -l
+3.统计directory下file的个数 包括子
+ls -lR | grey '^-' | wc -l
+4.统计directory下directory的个数 包括子
+ls -lR | grey '^d' | wc -l
+5.树状显示目录结构
+yum install tree
+tree 目录 -L 数字   显示目录下数字以内的层级
