@@ -1,0 +1,11 @@
+init
+vim /etc/inittab
+
+man
+help
+
+/etc/passwd
+/etc/shadow
+/etc/group
+
+ln -s source target     (soft link)
